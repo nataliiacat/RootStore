@@ -1,0 +1,104 @@
+.logo {
+  font-family: "Black Ops One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.closeNavbar,
+.toggleNavbar {
+  display: none;
+}
+
+.navList {
+  gap: 20px;
+}
+
+.navLink {
+  letter-spacing: -1px;
+  padding: 2px 0;
+}
+
+.navLink:hover {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.navLink:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 900px) {
+  .navLink {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    padding: 5px;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .header-actions {
+    order: 3;
+  }
+
+  .toggleNavbar {
+    order: 1;
+  }
+
+  .navBar {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -500rem;
+    z-index: 2000;
+    transition: .9s ease-in-out;
+    background-color: var(--bg-color);
+  }
+
+  .navList {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .navLink {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .closeNavbar {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+  }
+
+  .closeNavbar:hover {
+    top: .2rem;
+  }
+
+  .activeNavbar {
+    padding: 80px 15px;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: .9s ease-in-out;
+  }
+
+  .closeNavbar,
+  .toggleNavbar {
+    display: block;
+  }
+}
