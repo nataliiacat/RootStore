@@ -3,7 +3,7 @@
 :root {
   --primary-color: #0F0F0F;
   --secondary-primary-color: #505050;
-  --accent-color: #417F56;
+  --accent-color: #376B48;
   --secondary-accent-color: #A4D3B2;
   --bg-color: #EFEFEF;
   --secondary-bg-color: #F3FDFA;
@@ -118,9 +118,11 @@ section {
 }
 
 .btn {
-  padding: 1rem 2rem;
+  font-weight: 700;
+  color: var(--secondary-bg-color);
+  padding: .5rem 2rem;
   border-radius: 1rem;
-  border: 1px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
   background-color: var(--accent-color);
   cursor: pointer;
   outline: none;
@@ -130,11 +132,12 @@ section {
 
 .btn a,
 .btn {
-  color: var(--primary-color);
+  color: var(--secondary-bg-color);
 }
 
 .btn:hover {
   background-color: var(--secondary-accent-color);
+  color: var(--primary-color);
 }
 
 .btn:active {
