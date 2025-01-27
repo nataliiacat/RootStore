@@ -153,6 +153,7 @@ section {
 .subtitle {
   font-weight: 600;
   font-size: 1.5rem;
+  letter-spacing: -1px;
 }
 
 .text {
@@ -167,13 +168,12 @@ section {
 }
 
 .price {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.2rem;
+  letter-spacing: 2px;
 }
 
 .old-price {
-  font-weight: 500;
-  font-size: 1rem;
   text-decoration: line-through;
   color: var(--secondary-primary-color);
 }
@@ -211,5 +211,8 @@ section {
 
   .title {
     font-size: 2rem;
+  }
+  .btn{
+    font-size: .8rem;
   }
 }

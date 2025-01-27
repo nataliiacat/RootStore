@@ -8,7 +8,7 @@ import lyrata from './assets/images/products/ficus_lyrata.jpg'
 import bambino from './assets/images/products/ficus_lyrata_bambino.jpg'
 
 
-const plantsData = [
+export const plantsData = [
   {
     id: 1,
     category: "Kokedama",
@@ -47,7 +47,7 @@ const plantsData = [
   {
     id: 4,
     category: "Kokedama",
-    name: "Kokedama Epipremnum Marble Queen",
+    name: "Epipremnum Marble Queen",
     price: 45.95,
     onSale: false,
     description: "Kokedama is a special way of growing plants, literally translated 'moss ball', originating from Japan. Kokedama consists of a plant, a special substrate ( black clay ketotsuchi ), other components ( Akadama, zeolite, pumice, sand and peat ) are additionally mixed into the clay. From these materials, a suitable plant is perfectly wrapped in a 'ball' and the whole is covered with moss. Traditionally, kokedams are hung on string, macrame or placed on wet pebbles or other material.",
@@ -83,8 +83,8 @@ const plantsData = [
     category: "Ficuses",
     name: "Ficus Lyrata",
     price: 35.95,
-    oldPrice:50.00,
-    onSale: false,
+    oldPrice: 50.00,
+    onSale: true,
     description: "Ficus Lyrata is a tree-like plant characterized by its large green leaves of a violin (lyre) shape with a wavy edge. In room conditions, these leaves with pronounced veining can grow up to 30 cm in size. It comes from tropical Africa. Ficuses are among the unpretentious, fast-growing indoor plants that contain latex - a white liquid. If the plant is not limited by a low ceiling, it can grow to a height of several meters. Ficuses can be shaped and thickened by pruning.",
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. You can tell if it needs to be watered by the weight of the kokedama and also by how dry your moss ball is.",
     info: " stands out in large spaces with its exotic appearance. It needs support to grow. The lower leaves may drop over time, which is normal for older specimens of this variety.",
@@ -102,5 +102,3 @@ const plantsData = [
     image: bambino
   }
 ];
-
-export default plantsData;
