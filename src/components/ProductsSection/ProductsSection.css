@@ -50,9 +50,12 @@
   width: 100%;
   padding: 10px;
   text-align: center;
-  background-color: var(--bg-color);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow .3s ease;
 }
 
@@ -70,7 +73,7 @@
 }
 
 .product-card .price {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .image-container {

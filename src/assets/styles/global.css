@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat&display=swap');
 
 :root {
   --primary-color: #0F0F0F;
@@ -57,7 +57,7 @@ img {
   max-width: 100%;
 }
 
-button{
+button {
   border: none;
   background-color: var(--bg-color);
 }
@@ -168,7 +168,10 @@ section {
 }
 
 .price {
-  font-weight: 700;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
@@ -177,6 +180,7 @@ section {
   text-decoration: line-through;
   color: var(--secondary-primary-color);
 }
+
 
 @media (max-width: 1200px) {
   html {
@@ -212,7 +216,8 @@ section {
   .title {
     font-size: 2rem;
   }
-  .btn{
+
+  .btn {
     font-size: .8rem;
   }
 }

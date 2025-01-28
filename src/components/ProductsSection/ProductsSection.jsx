@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './ProductsSection.css'
 import { plantsData } from '../../data.js'
+import StarRating from '../StarRating/StarRating'
 
 
 const ProductsSection = () => {
@@ -39,11 +40,13 @@ const ProductsSection = () => {
               <div className="product-card" key={plant.id}>
                 {plant.onSale && (<span className="sale">SALE</span>)}
                 <div className="image-container">
-                  <img src={plant.image} alt={plant.name} /></div>
+                  <img src={plant.image} alt={plant.name} />
+                  </div>
                 <h3 className="subtitle">{plant.name}</h3>
+                <StarRating rating={plant.rating} />
                 <div className="price flex">
                   <span className="price">{plant.price}$</span>
-                  {plant.oldPrice && (<span className="old-price">{plant.oldPrice}$</span>)}</div>
+                  {plant.oldPrice && (<span className="price old-price">{plant.oldPrice}$</span>)}</div>
                 <button className="btn">Add to cart</button>
               </div>
             ))}
