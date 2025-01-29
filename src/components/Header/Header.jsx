@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 import RegistrationPopup from '../RegistrationPopup/RegistrationPopup'
 import Cart from '../Cart/Cart'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
@@ -17,7 +18,7 @@ const Header = ({ scrollToSection }) => {
     <>
       <header className="header">
         <div className="container flex">
-          <h2 className="logo">Root store</h2>
+          <Link to='/'><h2 className="logo">Root store</h2></Link>
           <nav className={active}>
             <ul className="navList flex">
               <li className="navItem">

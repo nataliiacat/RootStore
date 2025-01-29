@@ -1,10 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import './ProductsSection.css'
+import { Link } from 'react-router-dom'
 import { plantsData } from '../../data.js'
 import StarRating from '../StarRating/StarRating'
-
+import { useSelector, useDispatch } from 'react-redux'
+import { addToCart } from '../../stores/cartSlice'
 
 const ProductsSection = () => {
+  const carts = useSelector(store => store.cart.items);
+  console.log(carts);
+  const dispatch =useDispatch();
+  const handleAddToCart =(id)=>{
+    dispatch(addToCart({
+      productId: id,
+      quantity: 1
+    }));
+  }
   const [activeCategory, setActiveCategory] = useState('all');
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
@@ -38,22 +49,25 @@ const ProductsSection = () => {
           <div className="product-list flex">
             {filteredPlants.map((plant) => (
               <div className="product-card" key={plant.id}>
+               
                 {plant.onSale && (<span className="sale">SALE</span>)}
-                <div className="image-container">
+                 <Link to={plant.slug}><div className="image-container">
                   <img src={plant.image} alt={plant.name} />
-                  </div>
+                  </div></Link>
                 <h3 className="subtitle">{plant.name}</h3>
                 <StarRating rating={plant.rating} />
                 <div className="price flex">
                   <span className="price">{plant.price}$</span>
-                  {plant.oldPrice && (<span className="price old-price">{plant.oldPrice}$</span>)}</div>
-                <button className="btn">Add to cart</button>
+                  {plant.oldPrice && (<span className="price old-price">{plant.oldPrice}$</span>)}
+                  </div>
+                  
+                <button className="btn" onClick={()=>handleAddToCart(plant.id)}>Add to cart</button>
               </div>
             ))}
-          </div>
-
         </div>
-      </section>
+
+      </div>
+    </section >
     </>
   )
 }

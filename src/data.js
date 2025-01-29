@@ -20,7 +20,8 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. You can tell if it needs to be watered by the weight of the kokedama and also by how dry your moss ball is. You can moss ball dew to keep the moss bale still moist. Kokedama is not recommended to be placed in direct sunlight.",
     info: " is best known for its beautifully colored lanceolate leaves that grow in bunches. This particular type of 'snow white' aglaonema attracts attention mainly due to its really white (to slightly yellow) colored leaves, which have green edges and petioles.In the summer, the plant may have delicate inflorescences of yellow or white quivers, which turn into poisonous berries after flowering.Aglaonema belongs to the popular, fast- growing and very undemanding indoor plants, however, due to its white leaves, this cultivar is light - demanding.",
     rating: 5,
-    image: carassula
+    image: carassula,
+    slug: "kokedama-carassula-hobbit"
   },
   {
     id: 2,
@@ -32,7 +33,8 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. You can tell if it needs to be watered by the weight of the kokedama and also by how dry your moss ball is. You can moss ball dew to keep the moss bale still moist. Kokedama is not recommended to be placed in direct sunlight.",
     info: "Czech coffee plant,  is a useful plant originating from Arabia, which is cultivated for its fruits - coffee beans. The coffee tree has shiny green leaves that are wavy at the edges. Under suitable conditions, tiny white flowers can appear after a few years",
     rating: 4,
-    image: coffea
+    image: coffea,
+    slug: "kokedama-coffea-arabica"
   },
   {
     id: 3,
@@ -45,7 +47,8 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. You can tell if it needs to be watered by the weight of the kokedama and also by how dry your moss ball is. You can moss ball dew to keep the moss bale still moist. Kokedama is not recommended to be placed in direct sunlight.",
     info: "'dypsis lutescens' from the areca family, ( Czech areca palm or areca palm) is a plant native to Madagascar. It belongs to the heat-loving species and can grow to around 1.5 m in our conditions. A small plant usually has two leaves, over time the branches branch slightly into more leaves. Unlike other palm trees, the soft, deep green leaves do not sting, so they are safer. Due to the appearance of its leaves, it is also called the butterfly palm. The undemanding palm tree is suitable for almost any environment and beautifully fills an empty space both at home and in the office or in corridors.",
     rating: 5,
-    image: areca
+    image: areca, 
+    slug: "kokedama-areca-lutescens"
   },
   {
     id: 4,
@@ -57,7 +60,8 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. You can tell if it needs to be watered by the weight of the kokedama and also by how dry your moss ball is. You can moss ball dew to keep the moss bale still moist. Kokedama is not recommended to be placed in direct sunlight.",
     info: " is a variegated variant with green leaves that resemble marble in their annealing - the degree of variegation is mainly determined by light conditions. This plant is very popular for its unpretentiousness, easy and fast propagation and is suitable for beginners.",
     rating: 4,
-    image: epipremnum
+    image: epipremnum,
+    slug: "kokedama-epipremnum-marble-queen"
   },
   {
     id: 5,
@@ -69,7 +73,8 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again.",
     info: " is particularly attractive due to its dark green to black leaves. Ficuses can be shaped and thickened by pruning.",
     rating: 3,
-    image: abidjan
+    image: abidjan,
+    slug: "ficus-abidjan"
   },
   {
     id: 6,
@@ -82,7 +87,8 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. ",
     info: " is particularly attractive due to its dark green to black leaves. Ficuses can be shaped and thickened by pruning.",
     rating: 5,
-    image: robusta
+    image: robusta,
+    slug: "ficus-elastica-robusta"
   },
   {
     id: 7,
@@ -95,7 +101,8 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. You can tell if it needs to be watered by the weight of the kokedama and also by how dry your moss ball is.",
     info: " stands out in large spaces with its exotic appearance. It needs support to grow. The lower leaves may drop over time, which is normal for older specimens of this variety.",
     rating: 5,
-    image: lyrata
+    image: lyrata,
+    slug: "ficus-lyrata"
   },
   {
     id: 8,
@@ -107,6 +114,7 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. You can tell if it needs to be watered by the weight of the kokedama and also by how dry your moss ball is.",
     info: " stands out in large spaces with its exotic appearance. It needs support to grow. The lower leaves may drop over time, which is normal for older specimens of this variety.",
     rating: 4,
-    image: bambino
+    image: bambino,
+    slug: "ficus-lyrata-bambino"
   }
 ];
