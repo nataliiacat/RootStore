@@ -49,9 +49,9 @@ const ProductsSection = () => {
           <div className="product-list flex">
             {filteredPlants.map((plant) => (
               <div className="product-card" key={plant.id}>
-               
+                <Link to={plant.slug}>
                 {plant.onSale && (<span className="sale">SALE</span>)}
-                 <Link to={plant.slug}><div className="image-container">
+                <div className="image-container">
                   <img src={plant.image} alt={plant.name} />
                   </div></Link>
                 <h3 className="subtitle">{plant.name}</h3>

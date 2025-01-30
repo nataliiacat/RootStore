@@ -1,0 +1,25 @@
+.delivery {
+  position: relative;
+  top: 10%;
+  margin: auto;
+  width: 500px;
+}
+
+.delivery .subtitle,
+.delivery .text {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.delivery .subtitle {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 540px) {
+  .delivery.popup-content {
+    top: 10%;
+    left: 0;
+    width: 100vw;
+    height: auto;
+  }
+}

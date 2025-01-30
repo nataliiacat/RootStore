@@ -18,7 +18,7 @@ const Header = ({ scrollToSection }) => {
     <>
       <header className="header">
         <div className="container flex">
-          <Link to='/'><h2 className="logo">Root store</h2></Link>
+          <Link className="logo-link" to='/'><h2 className="logo">Root store</h2></Link>
           <nav className={active}>
             <ul className="navList flex">
               <li className="navItem">

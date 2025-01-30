@@ -1,0 +1,47 @@
+.product-action {
+  gap: 20px;
+}
+
+.quantity-controls span,
+.quantity-controls button {
+  padding: 4px 10px;
+  border-radius: 50%;
+  font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quantity-controls span {
+  background-color: var(--secondary-accent-color);
+}
+
+.quantity-controls button {
+  color: var(--secondary-bg-color);
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  outline: none;
+  transition: all .9s;
+}
+
+.quantity-controls button:hover {
+  background-color: var(--secondary-accent-color);
+  color: var(--primary-color);
+  transform: scale(0.9);
+}
+
+.detail-content .price,
+.detail-content .star-rating{
+  justify-content: flex-start;
+}
+.detail-content .subtitle{
+  margin: 20px 0 10px;
+}
+.product-action{
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.description{
+  margin-top: 20px;
+}
