@@ -192,15 +192,14 @@ section {
   html {
     font-size: 14px;
   }
+   .title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
   html {
     font-size: 13px;
-  }
-
-  .title {
-    font-size: 2.5rem;
   }
 }
 

@@ -37,7 +37,9 @@ const Detail = () => {
     <>
       <div className="detail container flex">
         <div className="img-container">
-          <img src={detail.image} alt={detail.name} /></div>
+          {detail.onSale && (<span className="sale">SALE</span>)}
+          <img src={detail.image} alt={detail.name} />
+        </div>
         <div className="detail-content" key={detail.id}>
           <h1 className="title">{detail.name}</h1>
           <StarRating rating={detail.rating} />
@@ -53,7 +55,7 @@ const Detail = () => {
             </div>
             <button className="btn" onClick={handleAddToCart}>Add to cart</button>
           </div>
-          <DeliveryPopup/>
+          <DeliveryPopup />
           <div className="description">
             <p className="text">{detail.description}</p>
             <h3 className="subtitle">Care Instructions</h3>

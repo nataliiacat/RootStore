@@ -1,0 +1,11 @@
+.item{
+  margin-bottom: 15px;
+  padding: 5px;
+  gap: 5px;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, transparent, var(--primary-color)) 3;
+}
+.item img{
+  width: 70px;
+}
