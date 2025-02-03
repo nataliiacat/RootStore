@@ -2,6 +2,7 @@ import React from 'react'
 import './HomeSection.css'
 import homeimg from '../../assets/images/home.png'
 import { useSpring, animated } from 'react-spring'
+import { BsBoxSeam, BsBookmarkStar, BsCreditCard } from "react-icons/bs";
 
 function Number({ n }) {
   const { number } = useSpring({
@@ -48,6 +49,35 @@ const HomeSection = () => {
                     <Number n={154} />+</div>
                   <span> happy Customers</span>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="delivery-options flex">
+            <div className="delivery-option flex">
+              <div className="delivery-option__icon">
+                <BsBoxSeam className="icon" />
+              </div>
+              <div className="delivery-option__info">
+              <h3 className="subtitle">Home Delivery</h3>
+              <p className="info">With your address saved in your user profile, you can receive your product at your doorstep.</p>
+              </div>
+            </div>
+            <div className="delivery-option flex">
+              <div className="delivery-option__icon">
+                <BsBookmarkStar className="icon" />
+              </div>
+              <div className="delivery-option__info">
+              <h3 className="subtitle">Product Guarantee</h3>
+              <p className="info">You can return the product within two weeks of receiving it if there’s any issue.</p>
+              </div>
+            </div>
+            <div className="delivery-option flex">
+              <div className="delivery-option__icon">
+                <BsCreditCard className="icon"/>
+              </div>
+              <div className="delivery-option__info">
+              <h3 className="subtitle">Cash on Delivery</h3>
+              <p className="info">For customer convenience, besides online payment, there’s also an option for cash on delivery.</p>
               </div>
             </div>
           </div>

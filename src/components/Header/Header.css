@@ -50,10 +50,6 @@
 }
 
 @media (max-width: 768px) {
-  .header .container {
-    padding: 5px;
-  }
-
   .logo-link {
     order: 2;
   }
