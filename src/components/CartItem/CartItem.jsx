@@ -39,8 +39,6 @@ const CartItem = (props) => {
           <span>{quantity}</span>
           <button onClick={handlePlusQuantity}>+</button>
         </div>
-
-
       </div>
     </>
   )
