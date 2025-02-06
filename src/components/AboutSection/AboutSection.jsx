@@ -7,7 +7,7 @@ import unboxing from '../../assets/images/unboxing.jpg'
 const AboutSection = () => {
   return (
     <>
-      <section className="about">
+      <section className="about" id="about">
         <div className="container">
           <div className="about__inner">
             <h2 className="title">Our Root Store:<br /> Your Grean Space</h2>
@@ -20,32 +20,34 @@ const AboutSection = () => {
           </div>
         </div>
       </section>
-      <section className="journey container">
-        <div className="journey-item flex">
-          <div className="journey-content">
-            <h3 className="subtitle">01. Carefully Packed</h3>
-            <p className="text">Each plant is hand-selected and securely packed in eco-friendly packaging to ensure it arrives in perfect condition.</p>
+      <section className="journey">
+        <div className="container">
+          <div className="journey-item flex">
+            <div className="journey-content">
+              <h3 className="subtitle">01. Carefully Packed</h3>
+              <p className="text">Each plant is hand-selected and securely packed in eco-friendly packaging to ensure it arrives in perfect condition.</p>
+            </div>
+            <div className="journey-img packing-img">
+              <img src={packing} alt="image packing" />
+            </div>
           </div>
-          <div className="journey-img packing-img">
-            <img src={packing} alt="image packing" />
+          <div className="journey-item flex">
+            <div className="journey-img">
+              <img src={delivery} alt="image delivery" />
+            </div>
+            <div className="journey-content">
+              <h3 className="subtitle">02. Fast & Safe Shipping</h3>
+              <p className="text">We ship your plant as soon as possible, using reliable carriers to ensure a smooth and timely delivery.</p>
+            </div>
           </div>
-        </div>
-        <div className="journey-item flex">
-          <div className="journey-img">
-            <img src={delivery} alt="image delivery" />
-          </div>
-          <div className="journey-content">
-            <h3 className="subtitle">02. Fast & Safe Shipping</h3>
-            <p className="text">We ship your plant as soon as possible, using reliable carriers to ensure a smooth and timely delivery.</p>
-          </div>
-        </div>
-        <div className="journey-item flex">
-          <div className="journey-content">
-            <h3 className="subtitle">03. Unboxing & Thriving</h3>
-            <p className="text">Unpack your new green friend, follow our care guide, and enjoy the beauty it brings to your space!</p>
-          </div>
-          <div className="journey-img">
-            <img src={unboxing} alt="image unboxing" />
+          <div className="journey-item flex">
+            <div className="journey-content">
+              <h3 className="subtitle">03. Unboxing & Thriving</h3>
+              <p className="text">Unpack your new green friend, follow our care guide, and enjoy the beauty it brings to your space!</p>
+            </div>
+            <div className="journey-img">
+              <img src={unboxing} alt="image unboxing" />
+            </div>
           </div>
         </div>
       </section>
