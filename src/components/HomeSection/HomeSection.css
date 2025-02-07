@@ -67,7 +67,6 @@
 }
 
 .delivery-option__icon {
-  background-color: var(--secondary-accent-color);
   padding: 1.5rem;
   border-radius: 50%;
   margin: 10px;

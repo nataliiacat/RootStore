@@ -28,6 +28,9 @@
 .navList {
   gap: 20px;
 }
+.navSale a{
+  color: #D30404;
+}
 
 .navLink {
   letter-spacing: -1px;

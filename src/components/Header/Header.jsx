@@ -39,11 +39,11 @@ const Header = ({ scrollToSection }) => {
                   scrollToSection('ProductsSection')
                 }}>PRODUCTS</a>
               </li>
-              <li className="navItem">
+              <li className="navItem navSale">
                 <a className="navLink subtitle" href="#RecommendSection" onClick={() => {
                   removeNavbar();
                   scrollToSection('RecommendSection')
-                }}>RECOMMEND</a>
+                }}>SALE</a>
               </li>
               <li className="navItem">
                 <a className="navLink subtitle" href="#ReviewsSection" onClick={() => {

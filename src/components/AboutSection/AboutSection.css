@@ -29,7 +29,7 @@
 }
 
 .journey {
-  background-image: linear-gradient(to right, var(--secondary-accent-color), transparent 30%, transparent 70%, var(--secondary-accent-color));
+  background-image: linear-gradient(to right, var(--secondary-accent-color), transparent 30%);
 }
 
 .journey-img {
@@ -103,7 +103,6 @@
     max-width: 45%;
     padding: 20px;
     border-radius: 20px;
-    border: 2px dashed var(--accent-color);
   }
 
   .journey-content {
