@@ -6,7 +6,7 @@
   height: 100vh;
   z-index: 99;
   position: fixed;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--bg-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform .5s ease-in-out;
 

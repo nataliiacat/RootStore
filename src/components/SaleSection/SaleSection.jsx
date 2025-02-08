@@ -5,6 +5,7 @@ import { plantsData } from '../../data.js'
 import StarRating from '../StarRating/StarRating'
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart } from '../../stores/cartSlice'
+import { IoIosArrowRoundDown } from 'react-icons/io'
 
 const SaleSection = () => {
   const carts = useSelector(store => store.cart.items);
@@ -22,7 +23,9 @@ const SaleSection = () => {
     <>
       <section className="SaleSection">
         <div className="container">
-          <h1 className="title">Spicial Offer Products</h1>
+          <h1 className="title">
+            <IoIosArrowRoundDown className="icon" />Special Offer Products<IoIosArrowRoundDown className="icon" />
+          </h1>
           <div className="product-list flex">
             {salePlants.map((plant) => (
               <div className="product-card" key={plant.id}>

@@ -1,6 +1,18 @@
-.SaleSection .title{
-  margin-bottom: 20px;
-  text-align: center;
+.SaleSection .title {
+  margin-bottom: 40px;
   color: #D30404;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SaleSection .title .icon {
+  fill: #D30404;
+  font-size: 3rem;
+}
+
+@media (max-width: 480px) {
+  .SaleSection .title .icon {
+    font-size: 2rem;
+  }
 }
