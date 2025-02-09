@@ -40,6 +40,7 @@
 
 .product-list {
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .product-card {
@@ -104,13 +105,13 @@
 }
 
 @media (max-width: 898px) {
-  .product-card {
+  .product-card.items {
     max-width: 30%;
   }
 }
 
 @media (max-width: 580px) {
-  .product-card {
+  .product-card.items {
     max-width: 48%;
   }
 }

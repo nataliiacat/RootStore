@@ -48,7 +48,7 @@ const ProductsSection = () => {
           </div>
           <div className="product-list flex">
             {filteredPlants.map((plant) => (
-              <div className="product-card" key={plant.id}>
+              <div className="product-card items" key={plant.id}>
                 <Link to={plant.slug}>
                 {plant.onSale && (<span className="sale">SALE</span>)}
                 <div className="image-container">
