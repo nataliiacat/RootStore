@@ -6,7 +6,12 @@ import abidjan from './assets/images/products/ficus_abidjan.jpg'
 import robusta from './assets/images/products/ficus_elastica_robusta.jpg'
 import lyrata from './assets/images/products/ficus_lyrata.jpg'
 import bambino from './assets/images/products/ficus_lyrata_bambino.jpg'
-
+import emma from './assets/images/emma.jpg'
+import james from './assets/images/james.jpg'
+import olivia from './assets/images/olivia.jpg'
+import daniel from './assets/images/daniel.jpg'
+import sophia from './assets/images/sophia.jpg'
+import michael from './assets/images/michael.jpg'
 
 export const plantsData = [
   {
@@ -47,7 +52,7 @@ export const plantsData = [
     care: "We take care of each kokedama according to the type of plant we have in it. Kokedamu water with boiled/boiled water approximately once a week. Kokedama is bothered by chlorine, we do not recommend water directly from the tap. Just place the kokedama in water for a few minutes, let it drain and hang it up again. You can tell if it needs to be watered by the weight of the kokedama and also by how dry your moss ball is. You can moss ball dew to keep the moss bale still moist. Kokedama is not recommended to be placed in direct sunlight.",
     info: "'dypsis lutescens' from the areca family, ( Czech areca palm or areca palm) is a plant native to Madagascar. It belongs to the heat-loving species and can grow to around 1.5 m in our conditions. A small plant usually has two leaves, over time the branches branch slightly into more leaves. Unlike other palm trees, the soft, deep green leaves do not sting, so they are safer. Due to the appearance of its leaves, it is also called the butterfly palm. The undemanding palm tree is suitable for almost any environment and beautifully fills an empty space both at home and in the office or in corridors.",
     rating: 5,
-    image: areca, 
+    image: areca,
     slug: "kokedama-areca-lutescens"
   },
   {
@@ -116,5 +121,55 @@ export const plantsData = [
     rating: 4,
     image: bambino,
     slug: "ficus-lyrata-bambino"
+  }
+];
+export const reviewsData = [
+  {
+    id: 1,
+    image: emma,
+    name: "Emma Collins",
+    plant: "Kokedama Coffea arabica",
+    rating: 5,
+    review: "This plant is very easy to care for and grows quickly. The leaves are beautiful and give a tropical vibe."
+  },
+  {
+    id: 2,
+    image: james,
+    name: "James Mitchell",
+    plant: "Ficus Robusta",
+    rating: 4.5,
+    review: "Perfect for beginners! It survives in low light and doesn't need frequent watering."
+  },
+  {
+    id: 3,
+    image: olivia,
+    name: "Olivia Parker",
+    plant: "Ficus Lyrata Bambino",
+    rating: 3.5,
+    review: "A stunning plant, but it requires a lot of care. It needs bright, indirect light and consistent watering."
+  },
+  {
+    id: 4,
+    image: daniel,
+    name: "Daniel Carter",
+    plant: "Kokedama Crassula Hobbit",
+    rating: 5,
+    review: "Grows like crazy! Super low maintenance and great for purifying the air."
+  },
+  {
+    id: 5,
+    image: sophia,
+    name: "Sophia Reed",
+    plant: "Epipremnum Marble Queen",
+    rating: 4,
+    review: "A beautiful plant with elegant white flowers. It does well in medium light and needs regular watering."
+  },
+  {
+    id: 6,
+    image: michael,
+    name: "Michael Bennett",
+    plant: "Epipremnum Marble Queen",
+    rating: 4.5,
+    review: "Great for skincare and super easy to care for. Just keep it in bright light and don’t overwater."
   }
 ];
