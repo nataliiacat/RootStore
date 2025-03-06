@@ -6,6 +6,7 @@ import { plantsData } from '../../data'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../stores/cartSlice'
 import DeliveryPopup from '../../components/DeliveryPopup/DeliveryPopup'
+import ReviewsSection from '../../components/ReviewsSection/ReviewsSection'
 
 const Detail = () => {
   const { slug } = useParams();

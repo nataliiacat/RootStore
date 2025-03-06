@@ -41,39 +41,41 @@
 .nav-buttons .icon:active {
   fill: var(--secondary-accent-color);
 }
-.title-contain .nav-buttons{
-display: flex;
-align-items: end;
-justify-content: flex-end;
-margin-top: 20px;
+
+.title-contain .nav-buttons {
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
-.title-contain .title{
+
+.title-contain .title {
   margin-bottom: 20px;
   color: var(--accent-color);
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.none.nav-buttons{
-  display: none;
-}
-@media (max-width: 600px){
-.reviewsSection .container{
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-.title-contain .nav-buttons {
-  display: none;
-}
-.title-contain .text{
-  display: none;
-}
-.title-contain .title{
-  text-align: center;
-}
-.slider-block{
-  width: 85%;
-}
-.none.nav-buttons {
-  display: block;
-}
+
+@media (max-width: 600px) {
+  .reviewsSection .container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .title-contain .nav-buttons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .title-contain .text {
+    display: none;
+  }
+
+  .title-contain .title {
+    text-align: center;
+  }
+
+  .slider-block {
+    width: 85%;
+  }
 }

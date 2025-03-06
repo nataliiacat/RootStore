@@ -17,7 +17,7 @@ const ReviewsSection = () => {
       <section className="reviewsSection">
         <div className="container">
           <div className="title-contain">
-            <h1 className="title">What People Say</h1>
+            <h1 className="title">Reviews</h1>
             <p className="text">Our clients love our service, and we truly value them in return. We’re dedicated to building strong, lasting relationships.</p>
             <div className="nav-buttons">
               <button ref={prevRef} className="custom-prev">
