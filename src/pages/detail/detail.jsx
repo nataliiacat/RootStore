@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 import { addToCart } from '../../stores/cartSlice'
 import DeliveryPopup from '../../components/DeliveryPopup/DeliveryPopup'
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection'
+import SaleSection from '../../components/SaleSection/SaleSection'
 
 const Detail = () => {
   const { slug } = useParams();
@@ -66,6 +67,7 @@ const Detail = () => {
           </div>
         </div>
       </div>
+      <SaleSection/>
     </>
   )
 }

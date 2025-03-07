@@ -6,7 +6,7 @@
   --accent-color: #376B48;
   --secondary-accent-color: #A4D3B2;
   --bg-color: #EFEFEF;
-  --secondary-bg-color: #F3FDFA;
+  --secondary-bg-color: #f6f9f8;
 }
 
 html {
@@ -47,9 +47,11 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  padding: 0;
 }
 
-ul[class] {
+ul[class], 
+li{
   list-style: none;
 }
 
@@ -81,7 +83,7 @@ a {
 }
 
 body {
-  background: var(--bg-color);
+  background-color: var(--bg-color);
   padding: 0;
 }
 

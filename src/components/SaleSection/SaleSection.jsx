@@ -39,6 +39,8 @@ const SaleSection = () => {
       {
         breakpoint: 724,
         settings: {
+          arrows: false,
+          dots: true,
           slidesToShow: 2
         }
       },
