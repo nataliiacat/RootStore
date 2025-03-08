@@ -57,12 +57,15 @@
 
 @media (max-width: 600px) {
   .reviewsSection .container {
+    margin-top: 0;
+    padding-top: 2rem;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, transparent, var(--primary-color), transparent) 3;
   }
 
-  .title-contain .nav-buttons,
   .title-contain .text {
     display: none;
   }
@@ -73,5 +76,10 @@
 
   .slider-block {
     width: 85%;
+  }
+
+  .title-contain .nav-buttons {
+    display: flex;
+    justify-content: space-between;
   }
 }

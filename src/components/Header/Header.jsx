@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 import RegistrationPopup from '../RegistrationPopup/RegistrationPopup'
 import Cart from '../Cart/Cart'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { Link as ScrollLink } from 'react-scroll'
 
-
-const Header = ({ scrollToSection }) => {
+const Header = () => {
   const [active, setActive] = useState('navBar')
   const showNav = () => {
     setActive('navBar activeNavbar')
@@ -14,42 +14,41 @@ const Header = ({ scrollToSection }) => {
   const removeNavbar = () => {
     setActive('navBar')
   }
+  const handleLogoClick = () => {
+    scrollToTop()
+  }
+  const handleHomeClick = () => {
+    if (location.pathname === '/') {
+      scrollToTop()
+    } else {
+      window.history.pushState({}, '', '/')
+      scrollToTop()
+    }
+    removeNavbar()
+  }
   return (
     <>
       <header className="header">
         <div className="container flex">
-          <Link className="logo-link" to='/'><h2 className="logo">Root store</h2></Link>
+          <Link className="logo-link" to='/' onClick={handleLogoClick}>
+            <h2 className="logo">Root store</h2>
+          </Link>
           <nav className={active}>
             <ul className="navList flex">
               <li className="navItem">
-                <a className="navLink subtitle" href="#HomeSection" onClick={() => {
-                  removeNavbar();
-                  scrollToSection('HomeSection')
-                }}>HOME</a>
+                <Link className="navLink subtitle" to="/" onClick={handleHomeClick}>HOME</Link>
               </li>
               <li className="navItem">
-                <a className="navLink subtitle" href="#AboutSection" onClick={() => {
-                  removeNavbar();
-                  scrollToSection('AboutSection')
-                }}>ABOUT</a>
+                <ScrollLink className="navLink subtitle" to="ProductsSection" smooth={true} duration={1000} onClick={removeNavbar}>PRODUCTS</ScrollLink>
               </li>
               <li className="navItem">
-                <a className="navLink subtitle" href="#ProductsSection" onClick={() => {
-                  removeNavbar();
-                  scrollToSection('ProductsSection')
-                }}>PRODUCTS</a>
+                <ScrollLink className="navLink subtitle" to="AboutSection" smooth={true} duration={1000} onClick={removeNavbar}>ABOUT</ScrollLink>
               </li>
               <li className="navItem navSale">
-                <a className="navLink subtitle" href="#RecommendSection" onClick={() => {
-                  removeNavbar();
-                  scrollToSection('RecommendSection')
-                }}>SALE</a>
+                <ScrollLink className="navLink subtitle" to="SaleSection" smooth={true} duration={1000} onClick={removeNavbar}>SALE</ScrollLink>
               </li>
               <li className="navItem">
-                <a className="navLink subtitle" href="#ReviewsSection" onClick={() => {
-                  removeNavbar();
-                  scrollToSection('ReviewsSection')
-                }}>REVIEWS</a>
+                <ScrollLink className="navLink subtitle" to="ReviewsSection" smooth={true} duration={1000} onClick={removeNavbar}>REVIEWS</ScrollLink>
               </li>
             </ul>
             <div onClick={removeNavbar} className="closeNavbar">

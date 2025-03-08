@@ -2,10 +2,10 @@ import React from 'react'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './SaleSection.css'
-import { Link } from 'react-router-dom'
 import { plantsData } from '../../data.js'
 import StarRating from '../StarRating/StarRating'
 import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { addToCart } from '../../stores/cartSlice'
 import { IoIosArrowRoundDown } from 'react-icons/io'
 import Slider from 'react-slick'
@@ -14,6 +14,7 @@ const SaleSection = () => {
   const carts = useSelector(store => store.cart.items);
   console.log(carts);
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   const handleAddToCart = (id) => {
     dispatch(addToCart({
@@ -39,9 +40,8 @@ const SaleSection = () => {
       {
         breakpoint: 724,
         settings: {
-          arrows: false,
-          dots: true,
-          slidesToShow: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       },
       {
@@ -49,14 +49,15 @@ const SaleSection = () => {
         settings: {
           dots: true,
           arrows: false,
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ]
   };
   return (
     <>
-      <section className="SaleSection">
+      <section className="SaleSection" id="SaleSection">
         <div className="container">
           <h1 className="title">
             <IoIosArrowRoundDown className="icon" />Special Offer Products<IoIosArrowRoundDown className="icon" />
@@ -65,12 +66,11 @@ const SaleSection = () => {
             <Slider {...settings}>
               {salePlants.map((plant) => (
                 <div className="product-card" key={plant.id}>
-                  <Link to={plant.slug}>
                     {plant.onSale && <span className="sale">SALE</span>}
-                    <div className="image-container">
-                      <img src={plant.image} alt={plant.name} />
+                    <div className="image-container" onClick={() => navigate(`/${plant.slug}`)}>
+                      <img src={plant.image} alt={plant.name} 
+                       />
                     </div>
-                  </Link>
                   <h3 className="subtitle">{plant.name}</h3>
                   <StarRating rating={plant.rating} />
                   <div className="price flex">

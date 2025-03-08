@@ -6,7 +6,6 @@ import { plantsData } from '../../data'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../stores/cartSlice'
 import DeliveryPopup from '../../components/DeliveryPopup/DeliveryPopup'
-import ReviewsSection from '../../components/ReviewsSection/ReviewsSection'
 import SaleSection from '../../components/SaleSection/SaleSection'
 
 const Detail = () => {
@@ -21,6 +20,9 @@ const Detail = () => {
     } else {
       window.location.href = '/';
     }
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
   }, [slug])
   const handleMinusQuantity = () => {
     setQuantity(quantity - 1 < 1 ? 1 : quantity - 1);
@@ -67,7 +69,7 @@ const Detail = () => {
           </div>
         </div>
       </div>
-      <SaleSection/>
+      {<SaleSection/>}
     </>
   )
 }

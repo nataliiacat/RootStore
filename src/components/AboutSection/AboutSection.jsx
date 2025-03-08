@@ -7,7 +7,7 @@ import unboxing from '../../assets/images/unboxing.jpg'
 const AboutSection = () => {
   return (
     <>
-      <section className="about" id="about">
+      <section className="about" id="AboutSection">
         <div className="container">
           <div className="about__inner">
             <h2 className="title">Our Root Store:<br /> Your Grean Space</h2>

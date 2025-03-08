@@ -1,8 +1,7 @@
 .ProductsSection {
   background-color: var(--secondary-bg-color);
   position: relative;
-  margin-top: 2rem;
-  padding: 1rem 0 2rem;
+  padding: 4rem 0 2rem;
 
 }
 

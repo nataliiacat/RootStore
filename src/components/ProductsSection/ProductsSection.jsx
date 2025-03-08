@@ -38,7 +38,7 @@ const ProductsSection = () => {
   }, [activeCategory]);
   return (
     <>
-      <section className="ProductsSection">
+      <section className="ProductsSection" id="ProductsSection">
         <div className="container">
           <h1 className="title">Our Product Range</h1>
           <div className="category-filter flex">

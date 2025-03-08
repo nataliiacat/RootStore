@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper/modules'
+import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 import './ReviewsSection.css'
 import { reviewsData } from '../../data'
 import StarRating from '../StarRating/StarRating'
@@ -24,7 +25,7 @@ const ReviewsSection = () => {
 
   return (
     <>
-      <section className="reviewsSection">
+      <section className="reviewsSection" id="ReviewsSection">
         <div className="container">
           <div className="title-contain">
             <h1 className="title">Reviews</h1>
@@ -41,7 +42,7 @@ const ReviewsSection = () => {
           <div className="slider-block">
             <Swiper
               ref={swiperRef}
-              modules={[Navigation]}
+              modules={[Navigation, Pagination]}
               slidesPerView={1}
               loop={true}
               grabCursor={true}

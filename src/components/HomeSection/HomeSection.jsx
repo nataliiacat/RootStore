@@ -17,7 +17,7 @@ function Number({ n }) {
 const HomeSection = () => {
   return (
     <>
-      <section className="HomeSection" id="homeSection">
+      <section className="HomeSection" id="HomeSection">
         <div className="container">
           <div className="home-content flex">
             <div className="content-img">

@@ -41,7 +41,6 @@
 .checkout-button {
   background-color: var(--accent-color);
   color: var(--secondary-bg-color);
-
 }
 
 .checkout-button:hover {
@@ -52,7 +51,6 @@
 .close-button {
   background-color: var(--primary-color);
   color: var(--secondary-bg-color);
-
 }
 
 .close-button:hover {
@@ -69,4 +67,8 @@
     width: 100%;
     min-width: 100%;
   }
+    .button-container button{
+      padding-bottom: 100px ;
+    }
+   
 }
