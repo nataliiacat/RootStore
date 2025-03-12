@@ -67,7 +67,7 @@ const SaleSection = () => {
               {salePlants.map((plant) => (
                 <div className="product-card" key={plant.id}>
                     {plant.onSale && <span className="sale">SALE</span>}
-                    <div className="image-container" onClick={() => navigate(`/${plant.slug}`)}>
+                  <div className="image-container" onClick={() => navigate(`/RootStore/${plant.slug}`)}>
                       <img src={plant.image} alt={plant.name} 
                        />
                     </div>
