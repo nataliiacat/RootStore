@@ -18,7 +18,7 @@ const Detail = () => {
     if (findDetail.length > 0) {
       setDetail(findDetail[0]);
     } else {
-      window.location.href = '/';
+      window.location.href = '/RootStore/';
     }
     setTimeout(() => {
       window.scrollTo(0, 0);

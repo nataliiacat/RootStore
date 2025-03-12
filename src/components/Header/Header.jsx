@@ -18,10 +18,10 @@ const Header = () => {
     scrollToTop()
   }
   const handleHomeClick = () => {
-    if (location.pathname === '/') {
+    if (location.pathname === '/RootStore/') {
       scrollToTop()
     } else {
-      window.history.pushState({}, '', '/')
+      window.history.pushState({}, '', '/RootStore/')
       scrollToTop()
     }
     removeNavbar()
@@ -30,13 +30,13 @@ const Header = () => {
     <>
       <header className="header">
         <div className="container flex">
-          <Link className="logo-link" to='/' onClick={handleLogoClick}>
+          <Link className="logo-link" to='/RootStore/' onClick={handleLogoClick}>
             <h2 className="logo">Root store</h2>
           </Link>
           <nav className={active}>
             <ul className="navList flex">
               <li className="navItem">
-                <Link className="navLink subtitle" to="/" onClick={handleHomeClick}>HOME</Link>
+                <Link className="navLink subtitle" to="/RootStore/" onClick={handleHomeClick}>HOME</Link>
               </li>
               <li className="navItem">
                 <ScrollLink className="navLink subtitle" to="ProductsSection" smooth={true} duration={1000} onClick={removeNavbar}>PRODUCTS</ScrollLink>
